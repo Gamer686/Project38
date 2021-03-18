@@ -7,7 +7,7 @@ var ground, invisibleGround, groundImage;
 
 var cloudsGroup, cloudImage;
 var obstaclesGroup, obstacle1, obstacle2, obstacle3, obstacle4, obstacle5, obstacle6;
-
+var  bg,bgImg;
 var score=0;
 
 var gameOver, restart;
@@ -16,7 +16,7 @@ localStorage["HighestScore"] = 0;
 
 function preload(){
   boy_running =   loadImage("BOY.png");
-  
+  bg = loadImage("Sand.jpg")
   
   groundImage = loadImage("ground2.png");
   
@@ -70,7 +70,7 @@ function setup() {
 
 function draw() {
   //boy.debug = true;
-  background(255);
+  background(bg);
   text("Score: "+ score, 500,50);
   
   if (gameState===PLAY){
