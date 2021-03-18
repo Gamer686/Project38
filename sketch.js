@@ -15,7 +15,7 @@ var gameOver, restart;
 localStorage["HighestScore"] = 0;
 
 function preload(){
-  Boy_running =   loadImage("BOY.png");
+  boy_running =   loadImage("BOY.png");
   
   
   groundImage = loadImage("ground2.png");
@@ -40,7 +40,7 @@ function setup() {
   
   boy.addImage("running", boy_running);
   
-  boy.scale = 0.5;
+  boy.scale = 0.05;
   
   ground = createSprite(200,180,400,20);
   ground.addImage("ground",groundImage);
